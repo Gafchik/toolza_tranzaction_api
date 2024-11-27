@@ -46,6 +46,7 @@ class Handler extends ExceptionHandler
     public function register(): void
     {
         $this->reportable(function (Throwable $e) {
+            dd($e->getMessage());
             return ResponseFacade::makeBadResponse(new BaseValidationException($e->getMessage()));
         });
         $this->renderable(function (Throwable $e, $request) {
