@@ -8,7 +8,7 @@
 
 APP_NAME=Laravel
 APP_ENV=local
-
+APP_KEY=base64:Xkd9V4gnCfBQE+stQQIQo8Rs2lfyDgVpq8sUeOz2ee4=
 APP_DEBUG=false
 APP_URL=имя домена
 
@@ -65,10 +65,10 @@ VITE_PUSHER_PORT="${PUSHER_PORT}"
 VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
 VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
-запустить php artisan key:generate
-
 версия  php 8.2.16
-запуск команды composer insatll
+запуск команды composer install
+если не получаеться удалить файл composer.lock
+запустить php artisan key:generate
 запуск php artisan migrate
 php artisan serve если запус на локалке
 

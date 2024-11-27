@@ -4,13 +4,11 @@
 дать пользовтелю гранты CRUD
 
 создать .env
-запустить php artisan key:generate
-
 в .env проставить
 
 APP_NAME=Laravel
 APP_ENV=local
-
+APP_KEY=base64:Xkd9V4gnCfBQE+stQQIQo8Rs2lfyDgVpq8sUeOz2ee4=
 APP_DEBUG=false
 APP_URL=имя домена
 
@@ -68,7 +66,8 @@ VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
 VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 версия  php 8.2.16
-запуск команды composer insatll
+запуск команды composer install
 запуск php artisan migrate
+запустить php artisan key:generate
 php artisan serve если запус на локалке
 
