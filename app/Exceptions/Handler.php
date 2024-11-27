@@ -50,6 +50,7 @@ class Handler extends ExceptionHandler
             return ResponseFacade::makeBadResponse(new BaseValidationException($e->getMessage()));
         });
         $this->renderable(function (Throwable $e, $request) {
+            dd($e->getMessage());
             if($e instanceof UnauthorizedHttpException){
                 return ResponseFacade::makeBadResponse(new UnauthorizedJWTException($e->getMessage()));
             }
