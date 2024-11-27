@@ -12,10 +12,10 @@ class Balance
     ) {
 
     }
-    public function getUserBalance(array $data): array
+    public function getUserBalance(int $userId): array
     {
-        $user = UserInfoFacade::getUserInfoById($data['user_id']);
-        $balance = $this->model->getUserBalance($data['user_id']);
+        $user = UserInfoFacade::getUserInfoById($userId);
+        $balance = $this->model->getUserBalance($userId);
         $balance = is_null($balance['balance'])
             ? ['balance' => self::EMPTY_TRANSACTION_BALANCE]
             : $balance;
