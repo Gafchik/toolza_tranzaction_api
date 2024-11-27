@@ -67,7 +67,8 @@ VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 версия  php 8.2.16
 запуск команды composer install
-запуск php artisan migrate
+если не получаеться удалить файл composer.lock
 запустить php artisan key:generate
+запуск php artisan migrate
 php artisan serve если запус на локалке
 

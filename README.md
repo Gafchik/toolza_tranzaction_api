@@ -72,3 +72,5 @@ VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 запуск php artisan migrate
 php artisan serve если запус на локалке
 
+если совсем все плохо с разворотом то можна потестить на 
+https://toolza-tranzaction-api.dichajeka1.online/
