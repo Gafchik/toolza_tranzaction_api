@@ -72,5 +72,25 @@ VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 запуск php artisan migrate
 php artisan serve если запус на локалке
 
-если совсем все плохо с разворотом то можна потестить на 
-https://toolza-tranzaction-api.dichajeka1.online/
+если совсем все плохо с разворотом то можна потестить на
+домен 
+https://toolza-tranzaction-api.dichajeka1.online
+ендпоинты
+/api/balance/1
+/api/transactions (post)
+{
+    "user_id": 1,
+    "amount": 5,
+    "type_id": 2,
+    "description": "test"
+}
+/api/transactions (get) с json
+{
+    "user_id": 1,
+    "date_from": "2024-11-27",
+    "type_id": 1,
+    "date_to": "2024-11-27"
+}
+
+DEPOSIT = 1;
+WITHDRAWAL = 2;
