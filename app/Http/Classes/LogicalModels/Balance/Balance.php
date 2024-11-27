@@ -16,8 +16,8 @@ class Balance
     {
         $user = UserInfoFacade::getUserInfoById($data['user_id']);
         $balance = $this->model->getUserBalance($data['user_id']);
-        $balance = is_null($balance)
-            ? self::EMPTY_TRANSACTION_BALANCE
+        $balance = is_null($balance['balance'])
+            ? ['balance' => self::EMPTY_TRANSACTION_BALANCE]
             : $balance;
         return [
             'user' => $user,
